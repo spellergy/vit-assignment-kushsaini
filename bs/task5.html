@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <form class="needs-validation" novalidate>
+            
+            <div class="mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                    <div class="invalid-feedback">Please supply your First Name</div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                    <div class="invalid-feedback">Please supply your Last Name</div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">E-Mail</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                    <input type="email" class="form-control" id="email" placeholder="E-Mail Address" required>
+                    <div class="invalid-feedback">Please supply your E-Mail</div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone #</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                    <input type="tel" class="form-control" id="phone" placeholder="(845)555-1212" required>
+                    <div class="invalid-feedback">Please supply your Phone #</div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="address" class="form-label">Address</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-house"></i></span>
+                    <input type="text" class="form-control" id="address" placeholder="Address" required>
+                    <div class="invalid-feedback">Please supply your Address</div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="city" class="form-label">City</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-building"></i></span>
+                    <input type="text" class="form-control" id="city" placeholder="City" required>
+                    <div class="invalid-feedback">Please supply your City</div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="state" class="form-label">State</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-list"></i></span>
+                    <select class="form-select" id="state" required>
+                        <option value="">Please select your state</option>
+                        <option value="NY">New York</option>
+                        <option value="CA">California</option>
+                        <option value="TX">Texas</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Do you have hosting?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="hosting" id="hostingYes" value="yes">
+                    <label class="form-check-label" for="hostingYes">Yes</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="hosting" id="hostingNo" value="no">
+                    <label class="form-check-label" for="hostingNo">No</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="projectDescription" class="form-label">Project Description</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-pencil"></i></span>
+                    <textarea class="form-control" id="projectDescription" placeholder="Project Description"></textarea>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-warning"><i class="bi bi-send"></i> Send</button>
+        </form>
+    </div>
+
+    <script>
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+</html>

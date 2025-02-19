@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethnus Layout</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .header {
+            background-color: #00b8e6;
+            color: black;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .nav-bar {
+            background-color: #808080;
+            padding: 10px 0;
+        }
+        
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+        
+        .nav-bar a:hover {
+            color: #e6e6e6;
+        }
+        
+        .content {
+            background-color: #f2f2f2;
+            min-height: 500px;
+            padding: 20px;
+        }
+        
+        .sidebar {
+            background-color: #666666;
+            min-height: 500px;
+            color: white;
+            padding: 20px;
+        }
+        
+        .auth-links {
+            text-align: right;
+        }
+        
+        .auth-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h2>Ethnus layout</h2>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar d-flex justify-content-between">
+        <div>
+            <a href="#">HOME</a>
+            <a href="#">MENU</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+        </div>
+        <div class="auth-links">
+            <a href="#">SIGNUP</a>
+            <a href="#">LOGIN</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9 content">
+                Write your content here
+            </div>
+            <div class="col-md-3 sidebar">
+                This is
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

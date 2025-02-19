@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My first styled page</title>
+    <style>
+        body {
+            font-family: serif;
+            background-color: #d9da3e;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            display: flex;
+            gap: 20px;
+            max-width: 800px;
+        }
+        
+        .navigation {
+            width: 200px;
+        }
+        
+        .nav-item {
+            display: flex;
+            align-items: stretch;
+            margin-bottom: 8px;
+            text-decoration: none;
+        }
+        
+        .nav-item .link-text {
+            background-color: white;
+            flex-grow: 1;
+            padding: 5px 10px;
+            font-size: 20px;
+        }
+        
+        .nav-item:first-child .link-text {
+            color: purple;
+        }
+        
+        .nav-item:not(:first-child) .link-text {
+            color: blue;
+        }
+        
+        .nav-item .box {
+            width: 25px;
+            background-color: black;
+        }
+        
+        .content {
+            flex-grow: 1;
+        }
+        
+        h1 {
+            color: purple;
+            margin-top: 0;
+            font-size: 24px;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            border-top: 1px solid #666;
+            padding-top: 10px;
+            font-style: italic;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navigation">
+            <a href="#" class="nav-item">
+                <div class="link-text">Home page</div>
+                <div class="box"></div>
+            </a>
+            <a href="#" class="nav-item">
+                <div class="link-text">Musings</div>
+                <div class="box"></div>
+            </a>
+            <a href="#" class="nav-item">
+                <div class="link-text">My town</div>
+                <div class="box"></div>
+            </a>
+            <a href="#" class="nav-item">
+                <div class="link-text">Links</div>
+                <div class="box"></div>
+            </a>
+        </nav>
+        
+        <main class="content">
+            <h1>My first styled page</h1>
+            <p>Welcome to my styled page!</p>
+            <p>It lacks images, but at least it has style. And it has links, even if they don't go anywhere...</p>
+            <p>There should be more here, but I don't know what yet.</p>
+            
+            <div class="footer">
+                Made 5 April 2004<br>
+                by myself.
+            </div>
+        </main>
+    </div>
+</body>
+</html>

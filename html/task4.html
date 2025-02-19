@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+    <style>
+        .form-row {
+            display: table-row;
+        }
+        .label, .input {
+            display: table-cell;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>User Information Form</h2>
+
+<form style="display: table;">
+    <div class="form-row">
+        <span class="label">Full Name:</span>
+        <span class="input"><input type="text" id="fullname" name="fullname"></span>
+    </div>
+
+    <div class="form-row">
+        <span class="label">Username:</span>
+        <span class="input"><input type="text" id="username" name="username"></span>
+    </div>
+
+    <div class="form-row">
+        <span class="label">Password:</span>
+        <span class="input"><input type="password" id="password" name="password"></span>
+    </div>
+
+    <div class="form-row">
+        <span class="label">Re Password:</span>
+        <span class="input"><input type="password" id="repassword" name="repassword"></span>
+    </div>
+
+    <div class="form-row">
+        <span class="label">Address:</span>
+        <span class="input"><input type="text" id="address" name="address"></span>
+    </div>
+
+    <div class="form-row">
+        <span class="label">Age:</span>
+        <span class="input"><input type="text" id="age" name="age"></span>
+    </div>
+
+    <div class="form-row">
+        <span class="label">Gender:</span>
+        <span class="input">
+            <select id="gender" name="gender">
+                <option value="Male" selected>Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </span>
+    </div>
+
+    <div class="form-row">
+        <span class="label"></span>
+        <span class="input"><input type="submit" value="Save"></span>
+    </div>
+</form>
+
+</body>
+</html>

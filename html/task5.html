@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
+th, td {
+    border: 1px solid #000000;
+    /* padding: 8px; */
+    text-align: left;
+}
+th {
+    text-align: center;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    /* margin-top: 4px;
+    margin-bottom: 8px; */
+    border: 1px solid #ddd;
+}
+input[type="radio"] {
+    margin-right: 5px;
+}
+.center {
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h2 class="center" style="color: blue;">Registration form</h2>
+
+<table>
+    <tr>
+        <th>First Name</th>
+        <td><input type="text" name="firstname"></td>
+    </tr>
+    <tr>
+        <th>Last Name</th>
+        <td><input type="text" name="lastname"></td>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <td><input type="email" name="email"></td>
+    </tr>
+    <tr>
+        <th>Password</th>
+        <td><input type="password" name="password"></td>
+    </tr>
+    <tr>
+        <th>Re-enter Password</th>
+        <td><input type="password" name="repassword"></td>
+    </tr>
+    <tr>
+        <th>Gender:</th>
+        <td>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </td>
+    </tr>
+    <tr>
+        <th>Age:</th>
+        <td><input type="text" name="age"></td>
+    </tr>
+    <tr>
+        <th>Phone Number</th>
+        <td><input type="text" name="phone"></td>
+    </tr>
+    <tr>
+        <th>Address</th>
+        <td><textarea name="address" rows="4" cols="50"></textarea></td>
+    </tr>
+     <tr>
+        <th>State</th>
+        <td><input type="text" name="state"></td>
+    </tr>
+    <tr>
+        <th>Country</th>
+        <td>
+            <select name="country">
+                <option value="">Choose your country</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+                <!-- Add more countries as needed -->
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th>Languages known</th>
+        <td>
+            <input type="checkbox" id="english" name="language" value="english">
+            <label for="english">English</label>
+            <input type="checkbox" id="kannada" name="language" value="kannada">
+            <label for="kannada">Kannada</label>
+            <input type="checkbox" id="hindi" name="language" value="hindi">
+            <label for="hindi">Hindi</label>
+            <input type="checkbox" id="telugu" name="language" value="telugu">
+            <label for="telugu">Telugu</label>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <input type="checkbox" id="declare" name="declare" value="true">
+            <label for="declare">Hereby I declare all the given details are true</label>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="center">
+            <a href="#">Log in to Ethnus website</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="center">
+            <button type="submit">Register</button>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
